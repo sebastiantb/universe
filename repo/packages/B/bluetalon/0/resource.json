@@ -1,0 +1,14 @@
+  {
+  "images": {
+    "icon-small": "https://dl.dropboxusercontent.com/u/73355138/ge-monogram-bluesteel.png",
+    "icon-medium": "https://dl.dropboxusercontent.com/u/73355138/ge-monogram-bluesteel.png",
+    "icon-large": "https://dl.dropboxusercontent.com/u/73355138/ge-monogram-bluesteel.png"
+  },
+  "assets": {
+    "container": {
+      "docker": {
+        "bluetalon-docker": "011309846044.dkr.ecr.us-west-2.amazonaws.com/data-rights-enforcement/bluetalon-policy-database:latest"
+      }
+    }
+  }
+}

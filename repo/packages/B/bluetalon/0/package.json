@@ -1,0 +1,27 @@
+{
+  "packagingVersion": "1.0",
+  "minDcosReleaseVersion": "1.8",
+  "name": "Bluetalon",
+  "version": "3.1.0",
+  "scm": "",
+  "maintainer": "support@bluetalon.com",
+  "website": "http://bluetalon.com/",
+  "description": "BlueTalon Data Centric Security framwework",
+  "framework": true,
+  "tags": [
+    "bluetalon",
+    "data",
+    "security",
+    "access",
+    "control"
+  ],
+"preInstallNotes": "This DC/OS Service is currently EXPERIMENTAL.",
+"postInstallNotes": "Service installed.\n\nDefault login: `btadmin`/`P@ssw0rd`.",
+"postUninstallNotes": "Service uninstalled. Note that any persisting data still exists and will need to be manually removed.",
+  "licenses": [
+    {
+      "name": "Bluetalon GE Usage",
+      "url": "http://bluetalon.com/"
+    }
+  ]
+}

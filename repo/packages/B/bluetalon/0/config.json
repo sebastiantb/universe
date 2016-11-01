@@ -1,0 +1,190 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "properties": {
+        "service":{
+            "type":"object",
+            "description": "Bluetalon service configuration properties",
+            "properties":{
+                "name" : {
+                    "description":"Name of this service instance.",
+                    "type":"string",
+                    "default":"bluetalon"
+                }
+            }
+        },
+        "policy-server":{
+            "type": "object",
+            "description": "Policy Server service configuration properties",
+            "properties": {
+                "instances": {
+                    "description": "Number of instances to be deployed.",
+                    "type": "number",
+                    "default": 2.0,
+                    "minimum": 2.0
+                },
+                "cpus": {
+                    "description": "CPU shares to allocate to each service instance.",
+                    "type": "number",
+                    "default": 0.5,
+                    "minimum": 0.5
+                },
+                "mem": {
+                    "description": "Memory to allocate to each service instance.",
+                    "type": "number",
+                    "default": 256.0,
+                    "minimum": 256.0
+                }
+            },
+            "required": [
+                "instances",
+                "cpus",
+                "mem"
+            ]
+        },
+        "policy-configuration":{
+            "type": "object",
+            "description": "Policy Configuration service configuration properties",
+            "properties": {
+                "instances": {
+                    "description": "Number of instances to be deployed.",
+                    "type": "number",
+                    "default": 2.0,
+                    "minimum": 2.0
+                },
+                "cpus": {
+                    "description": "CPU shares to allocate to each service instance.",
+                    "type": "number",
+                    "default": 0.5,
+                    "minimum": 0.5
+                },
+                "mem": {
+                    "description": "Memory to allocate to each service instance.",
+                    "type": "number",
+                    "default": 256.0,
+                    "minimum": 256.0
+                }
+            },
+            "required": [
+                "instances",
+                "cpus",
+                "mem"
+            ]
+        },
+        "policy-engine":{
+            "type": "object",
+            "description": "Policy Engine service configuration properties",
+            "properties": {
+                "instances": {
+                    "description": "Number of instances to be deployed.",
+                    "type": "number",
+                    "default": 2.0,
+                    "minimum": 2.0
+                },
+                "cpus": {
+                    "description": "CPU shares to allocate to each service instance.",
+                    "type": "number",
+                    "default": 1.0,
+                    "minimum": 1.0
+                },
+                "mem": {
+                    "description": "Memory to allocate to each service instance.",
+                    "type": "number",
+                    "default": 4096.0,
+                    "minimum": 4096.0
+                }
+            },
+            "required": [
+                "instances",
+                "cpus",
+                "mem"
+            ]
+        },   
+        "audit-server":{
+            "type": "object",
+            "description": "Audit Server service configuration properties",
+            "properties": {
+                "instances": {
+                    "description": "Number of instances to be deployed.",
+                    "type": "number",
+                    "default": 2.0,
+                    "minimum": 2.0
+                },
+                "cpus": {
+                    "description": "CPU shares to allocate to each service instance.",
+                    "type": "number",
+                    "default": 0.5,
+                    "minimum": 0.5
+                },
+                "mem": {
+                    "description": "Memory to allocate to each service instance.",
+                    "type": "number",
+                    "default": 256.0,
+                    "minimum": 256.0
+                }
+            },
+            "required": [
+                "instances",
+                "cpus",
+                "mem"
+            ]
+        },
+        "audit-engine":{
+            "type": "object",
+            "description": "Audit Server service configuration properties",
+            "properties": {
+                "instances-kafka": {
+                    "description": "Number of kafka broker instances to be deployed.",
+                    "type": "number",
+                    "default": 3.0,
+                    "minimum": 3.0
+                },
+                "cpus-kafka": {
+                    "description": "CPU shares to allocate to each kafka broker instance.",
+                    "type": "number",
+                    "default": 0.5,
+                    "minimum": 0.5
+                },
+                "mem-kafka": {
+                    "description": "Memory to allocate to each  kafka broker instance.",
+                    "type": "number",
+                    "default": 1024.0,
+                    "minimum": 1024.0
+                },
+                 "advertised-host-address-kafka": {
+                    "description": "advertised host address instance.",
+                    "type": "string",
+                    "default": "localhost"
+                },
+                "instances-activity-monitor": {
+                    "description": "Number of activity monitor instances to be deployed",
+                    "type": "number",
+                    "default": 3.0,
+                    "minimum": 3.0
+                },
+                "cpus-activity-monitor": {
+                    "description": "CPU shares to allocate to each activity monitor instance.",
+                    "type": "number",
+                    "default": 0.5,
+                    "minimum": 0.5
+                },
+                "mem-activity-monitor": {
+                    "description": "Memory to allocate to each  acitivity monitor instance.",
+                    "type": "number",
+                    "default": 256.0,
+                    "minimum": 256.0
+                },
+            },
+            "required": [
+                "instances-kafka",
+                "cpus-kafka",
+                "mem-kafka",
+                "advertised-host-address-kafka",
+                "instances-activity-monitor",
+                "cpus-activity-monitor",
+                "mem-activity-monitor",
+
+
+            ]
+        }
+    }
+}
